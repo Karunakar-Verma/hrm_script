@@ -1,5 +1,5 @@
 @echo off
 
-pytest -v test_login.py --html=report.html
+pytest -v --html=report.html --self-contained-html
 
 pause
