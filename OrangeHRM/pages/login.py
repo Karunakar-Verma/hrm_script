@@ -9,7 +9,7 @@ class LoginPage:
 
     def __init__(self,driver_setup):
         self.driver = driver_setup
-        self.wait = WebDriverWait(self.driver, 10)
+        self.wait = WebDriverWait(self.driver, 20)
 
     def enter_username(self,username):
         self.wait.until(EC.visibility_of_element_located(self.username)).send_keys(username)
@@ -20,6 +20,12 @@ class LoginPage:
 
     def click_submit(self):
         self.wait.until(EC.element_to_be_clickable(self.btn)).click()
+
+
+    def login(self, username, password):
+        self.enter_username(username)
+        self.enter_password(password)
+        self.click_submit()
 
 
 
