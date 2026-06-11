@@ -8,6 +8,9 @@ cd %~dp0
 set PYTHONPATH=%CD%
 
 echo Running tests...
-pytest tests --html=reports/report.html --self-contained-html -v
+pytest tests --alluredir=allure_report
+
+echo opening allure report..
+allure serve allure_report
 
 echo Done.

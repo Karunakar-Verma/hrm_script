@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_login.py:12 Entering username..!
+[32mINFO    [0m root:test_login.py:14 Entering password..!
+[32mINFO    [0m root:test_login.py:16 Clicked submit..!
+[32mINFO    [0m root:test_login.py:20 Assertion passed..!
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:869 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=56193): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/d7410109a4192b33119a84d7c69798c6
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:869 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=56193): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/d7410109a4192b33119a84d7c69798c6
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:869 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=56193): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/d7410109a4192b33119a84d7c69798c6
