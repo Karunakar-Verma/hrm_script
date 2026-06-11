@@ -3,7 +3,10 @@
 echo Installing requirements...
 pip install -r requirements.txt
 
+echo Setting PYTHONPATH...
+set PYTHONPATH=%CD%
+
 echo Running tests...
-pytest --html=reports/report.html --self-contained-html
+pytest tests --html=reports/report.html --self-contained-html -v
 
 echo Done.
